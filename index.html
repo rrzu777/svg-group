@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>SVG GROUP | 24 7 360º</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#0090FF"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0090FF"/>
+    <link rel="icon" type="image/png" href="dist/images/icon-home.png" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="spinner-container">
+      <div class="spinner" id="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+
+    <!-- offCanvas -->
+    <button class="hamburger hamburger--slider" type="button" id="burguer-button" data-toggle="offCanvasRight">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap">
+      <div class="offcanvas-full-screen-inner">
+
+        <ul class="offcanvas-full-screen-menu">
+          <div class="grid-x">
+            <div class="cell small-10 menu-opts">
+              <div class="box-news-1-open" data-show="true">
+                <div class="box-news-1-open-header">
+                  <a href="#">Toyota Boxes</a>
+                  <p>Fecha 11 tc2000 - Autodromo JM Fangio</p>
+                </div>
+                <div class="box-news-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <div class="box-news-2-open"  data-show="true">
+                <div class="box-news-1-open-header">
+                  <a href="#">Santander Hospitality</a>
+                  <p>Fecha 5 Copa Sudamericana</p>
+                </div>
+                <div class="box-news-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <div class="box-news-3-open" data-show="true">
+                <div class="box-news-1-open-header">
+                  <a href="#">Santander Hospitality 3</a>
+                  <p>Fecha 5 Copa Sudamericana</p>
+                </div>
+                <div class="box-news-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  
+                </div>
+              </div>
+             <!-- <div class="box-news-1" id="box-news-1">
+                <a href="#">Toyota Boxes</a>
+                <p>Fecha 11 tc2000 - Autodromo JM Fangio</p>
+              </div>
+              <div class="box-news-2" id="box-news-2">
+                <a href="#">Santander Hospitality</a>
+                <p>Fecha 5 Copa Sudamericana</p>
+              </div>
+              <div class="box-news-3" id="box-news-3">
+                <a href="#">Santander Hospitality</a>
+                <p>Fecha 5 Copa Sudamericana</p>
+              </div>-->
+              <!-- in -->
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button id="button-menu-left" type="button box-btn" class="icon-button" data-toggle="offcanvas-full-screen">
+        <img class="two-dots" src="dist/images/icon-home.png" alt="icon">
+        <i class="two-dots-text">Lo Nuevo</i>
+      </button>
+      <button id="button-back-menu" type="button" class="back-arrow">
+          <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 256 256" height="80px" id="Layer_1" version="1.1" viewBox="0 0 256 256" width="80px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M179.199,38.399c0,1.637-0.625,3.274-1.875,4.524l-85.076,85.075l85.076,85.075c2.5,2.5,2.5,6.55,0,9.05s-6.55,2.5-9.05,0  l-89.601-89.6c-2.5-2.5-2.5-6.551,0-9.051l89.601-89.6c2.5-2.5,6.55-2.5,9.05,0C178.574,35.124,179.199,36.762,179.199,38.399z"/></svg>
+      </button>
+    </div>
+
+    <header id="header" class="header contenedor"> <!-- header -->
+      <nav class="menu" id="menu"> <!-- menu -->
+        <ul>
+          <li>
+            <a href="#cultura">Cultura</a>
+          </li>
+          <li>
+            <a href="#casos">Casos de éxito</a>
+          </li>
+          <li>
+            <a href="#nosotros">Nosotros</a>
+          </li>
+          <li>
+            <a href="#capacidades">Capacidades</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+
+    <!-- Top bar -->
+    <div class="nav" data-magellan>
+      <a href="#hero">
+        <img class="logo" src="dist/images/logo.png" alt="logo">
+      </a>
+    </div>
+
+    <!-- hero -->
+    <div class="hero-wrapper scroll" id="hero" data-magellan-target="hero">
+      <div class="hero-wrapper-container">
+        <div class="orbit hero-wrapper-container-slider" role="region" aria-label="pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <div class="orbit-wrapper">
+            <ul class="orbit-container">
+              <li class="orbit-slide">
+                <h3 class="hero-wrapper-title">MARCAS Y DEPORTES</h3>
+                <p class="hero-wrapper-subtitle">ADVERTISING & SPORTS MKTING</p>
+              </li>
+              <li class="orbit-slide">
+                <h3 class="hero-wrapper-title">MEDIOS + EGAGEMENT</h3>
+                <p class="hero-wrapper-subtitle">ADVERTISING & SPORTS MKTING</p>
+              </li>
+              <li class="orbit-slide">
+                <h3 class="hero-wrapper-title">CONFIANZA Y PASIÓN</h3>
+                <p class="hero-wrapper-subtitle">ADVERTISING & SPORTS MKTING</p>
+              </li>
+              <li class="orbit-slide">
+                <h3 class="hero-wrapper-title">24 7 360º</h3>
+                <p class="hero-wrapper-subtitle">ADVERTISING & SPORTS MKTING</p>
+              </li>
+            </ul>
+          </div>
+          <section id="section04" class="demo" data-magellan>
+            <a href="#cultura"><span></span></a>
+          </section>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+          </nav>
+        </div>
+        <span class="hero-wrapper-container-scroll"></span>
+        <video src="dist/images/home.mp4" loop autoplay ></video>
+      </div>
+    </div>
+
+    <!-- cultura -->
+    <div class="culture-wrapper scroll" id="cultura" data-magellan-target="cultura">
+      <div class="culture-wrapper-container">
+        <div class="content">
+          <h2 class="culture-wrapper-container-title">Cultura</h2>
+          <h3 class="culture-wrapper-container-subtitle">“Héroes, fanáticos, relatores y espectadores <br> crean un ecosistema único en el deporte."</h3>
+          <p class="culture-wrapper-container-desc">El deporte es una escuela de valores nobles como la lealtad, el esfuerzo,
+              la fraternidad, la fidelidad a los compromisos, la modestia, la generosidad,
+              la honestidad, y por sobretodo, el esfuerzo. Desde 1988 SV Group conecta
+              a las marcas con este universo de valores positivos.</p>
+        </div>
+        <div class="images-container">
+          <div class="grid-x culture-wrapper-images">
+            <div class="cell small-6 medium-4 large-3">
+              <img class="toyota" src="dist/images/toyota.png" alt="toyota">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="bridgestone" src="dist/images/bridgestone.png" alt="bridgestone">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="santander" src="dist/images/santander.png" alt="santander">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="sudamericana" src="dist/images/sudamericana.png" alt="sudamericana">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="total" src="dist/images/total.png" alt="total">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="bumbet" src="dist/images/bumbet.png" alt="bumbet">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="conmebol" src="dist/images/conmebol.png" alt="conmebol">
+            </div>
+            <div class="cell small-6 medium-4 large-3">
+              <img class="autocredito" src="dist/images/autocredito.png" alt="autocredito">
+            </div>
+          </div>
+        </div>
+        <video src="dist/images/cultura-baja.mp4" loop autoplay poster="posterimage.jpg"></video>
+      </div>
+    </div>
+
+    <!-- casos -->
+    <section class="cases-wrapper scroll" id="casos" data-magellan-target="casos">
+      <div class="grid-x">
+        <div class="cell small-12 medium-12 large-6 cases-wrapper-half">
+          <h3>Casos <br>de éxito</h3>
+          <div class="more-grid">
+            <img class="more-grid-btn" src="dist/images/arrow.png" alt="back">
+            <p>Más Casos</p>
+          </div>
+        </div>
+        <div class="cell small-12 medium-12 large-6 cases-wrapper-second">
+          <div class="grid-x">
+            <div class="cell small-12 medium-6 large-6 box-case-one">
+              <img src="dist/images/caso-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-two">
+              <img src="dist/images/caso-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-three">
+              <img src="dist/images/caso-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-four">
+              <img src="dist/images/caso-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-five">
+              <img src="dist/images/caso-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-six">
+              <img src="dist/images/caso-ejemplo.jpg" alt="ejemplo">
+            </div>
+          </div>
+        </div>
+
+        <!-- cases modal -->
+        <div class="cases scroll">
+          <div class="case overlay-one">
+            <div class="grid-x modal-one">
+              <div class="cell small-12 medium-5 large-6 modal-text">
+                <span class="icon-cross modal-exit"></span>
+                <img src="dist/images/logo-empresa-caso.png" alt="logo-empresa">
+                <h3 class="modal-text-title">Conmebol Sudamericana.</h3>
+                <p class="modal-text-desc">SV Group y MVA es la agencia Conmebol para la operación y logística de la Conmebol Sudamericana en Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela. 10 países, 54 equipos, 106 partidos a lo largo de 11 meses.
+                  Consultoría y auditoría de cada juego.
+                </p>
+              </div>
+              <div class="cell small-12 medium-5 large-6 modal-image-1">
+                <img src="dist/images/caso-descripcion.jpg" alt="caso">
+              </div>
+            </div>
+          </div>
+          <div class="case overlay-two">
+            <div class="grid-x modal-two">
+              <div class="cell small-12 medium-5 large-6 modal-text">
+                <span class="icon-cross modal-exit"></span>
+                <div class="lightbox-2">
+                  <img class="lightbox-2-btn" src="dist/images/arrow.png" alt="back">
+                </div>
+                <img src="dist/images/logo-empresa-caso.png" alt="logo-empresa">
+                <h3 class="modal-text-title">Conmebol Sudamericana.</h3>
+                <p class="modal-text-desc">SV Group y MVA es la agencia Conmebol para la operación y logística de la Conmebol Sudamericana en Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela. 10 países, 54 equipos, 106 partidos a lo largo de 11 meses.
+                  Consultoría y auditoría de cada juego.
+                </p>
+              </div>
+              <div class="cell small-12 medium-5 large-6 modal-image-2">
+                <img src="dist/images/caso-descripcion.jpg" alt="caso">
+              </div>
+            </div>
+          </div>
+          <div class="case overlay-three">
+            <div class="grid-x modal-three">
+              <div class="cell small-12 medium-5 large-6 modal-text">
+                <span class="icon-cross modal-exit"></span>
+                <div class="lightbox-3">
+                  <img class="lightbox-3-btn" src="dist/images/arrow.png" alt="back">
+                </div>
+                <img src="dist/images/logo-empresa-caso.png" alt="logo-empresa">
+                <h3 class="modal-text-title">Conmebol Sudamericana.</h3>
+                <p class="modal-text-desc">SV Group y MVA es la agencia Conmebol para la operación y logística de la Conmebol Sudamericana en Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela. 10 países, 54 equipos, 106 partidos a lo largo de 11 meses.
+                  Consultoría y auditoría de cada juego.
+                </p>
+              </div>
+              <div class="cell small-12 medium-5 large-6 modal-image-3">
+                <img src="dist/images/caso-descripcion.jpg" alt="caso">
+              </div>
+            </div>
+          </div>
+          <div class="case overlay-four">
+            <div class="grid-x modal-four">
+              <div class="cell small-12 medium-5 large-6 modal-text">
+                <span class="icon-cross modal-exit"></span>
+                <div class="lightbox-4">
+                  <img class="lightbox-4-btn" src="dist/images/arrow.png" alt="back">
+                </div>
+                <img src="dist/images/logo-empresa-caso.png" alt="logo-empresa">
+                <h3 class="modal-text-title">Conmebol Sudamericana.</h3>
+                <p class="modal-text-desc">SV Group y MVA es la agencia Conmebol para la operación y logística de la Conmebol Sudamericana en Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela. 10 países, 54 equipos, 106 partidos a lo largo de 11 meses.
+                  Consultoría y auditoría de cada juego.
+                </p>
+              </div>
+              <div class="cell small-12 medium-5 large-6 modal-image-4">
+                <img src="dist/images/caso-descripcion.jpg" alt="caso">
+              </div>
+            </div>
+          </div>
+          <div class="case overlay-five">
+            <div class="grid-x modal-five">
+              <div class="cell small-12 medium-5 large-6 modal-text">
+                <span class="icon-cross modal-exit"></span>
+                <div class="lightbox-5">
+                  <img class="lightbox-5-btn" src="dist/images/arrow.png" alt="back">
+                </div>
+                <img src="dist/images/logo-empresa-caso.png" alt="logo-empresa">
+                <h3 class="modal-text-title">Conmebol Sudamericana.</h3>
+                <p class="modal-text-desc">SV Group y MVA es la agencia Conmebol para la operación y logística de la Conmebol Sudamericana en Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela. 10 países, 54 equipos, 106 partidos a lo largo de 11 meses.
+                  Consultoría y auditoría de cada juego.
+                </p>
+              </div>
+              <div class="cell small-12 medium-5 large-6 modal-image-5">
+                <img src="dist/images/caso-descripcion.jpg" alt="caso">
+              </div>
+            </div>
+          </div>
+          <div class="case overlay-six">
+            <div class="grid-x modal-six">
+              <div class="cell small-12 medium-5 large-6 modal-text">
+                <span class="icon-cross modal-exit"></span>
+                <div class="lightbox-6">
+                  <img class="lightbox-6-btn" src="dist/images/arrow.png" alt="back">
+                </div>
+                <img src="dist/images/logo-empresa-caso.png" alt="logo-empresa">
+                <h3 class="modal-text-title">Conmebol Sudamericana.</h3>
+                <p class="modal-text-desc">SV Group y MVA es la agencia Conmebol para la operación y logística de la Conmebol Sudamericana en Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela. 10 países, 54 equipos, 106 partidos a lo largo de 11 meses.
+                  Consultoría y auditoría de cada juego.
+                </p>
+              </div>
+              <div class="cell small-12 medium-5 large-6 modal-image-6">
+                <img src="dist/images/caso-descripcion.jpg" alt="caso">
+              </div>
+            </div>
+          </div>
+
+          <!-- lightbox -->
+          <div class="overlay-lightbox-1">
+            <span class="icon-cross lightbox-exit-1"></span>
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <!-- <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space"> -->
+                      <iframe class="orbit-image" src="https://www.youtube.com/embed/g_uoH6hJilc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets slide-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+          <div class="overlay-lightbox-2">
+            <span class="icon-cross lightbox-exit-2"></span>
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <!-- <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space"> -->
+                      <iframe class="orbit-image" src="https://www.youtube.com/embed/g_uoH6hJilc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets slide-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+          <div class="overlay-lightbox-3">
+            <span class="icon-cross lightbox-exit-3"></span>
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <!-- <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space"> -->
+                      <iframe class="orbit-image" src="https://www.youtube.com/embed/g_uoH6hJilc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets slide-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+          <div class="overlay-lightbox-4">
+            <span class="icon-cross lightbox-exit-4"></span>
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <!-- <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space"> -->
+                      <iframe class="orbit-image" src="https://www.youtube.com/embed/g_uoH6hJilc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets slide-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+          <div class="overlay-lightbox-5">
+            <span class="icon-cross lightbox-exit-5"></span>
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <!-- <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space"> -->
+                      <iframe class="orbit-image" src="https://www.youtube.com/embed/g_uoH6hJilc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets slide-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+          <div class="overlay-lightbox-6">
+            <span class="icon-cross lightbox-exit-6"></span>
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <!-- <img class="orbit-image" src="dist/images/menu-ejemplo.jpg" alt="Space"> -->
+                      <iframe class="orbit-image" src="https://www.youtube.com/embed/g_uoH6hJilc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets slide-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="cell small-12 medium-12 large-6 grid-extra cases-wrapper-second">
+          <div class="grid-x">
+            <span class="icon-cross grid-extra-exit"></span>
+            <div class="cell small-12 medium-6 large-6 box-case-one">
+              <img src="dist/images/menu-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-two">
+              <img src="dist/images/menu-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-three">
+              <img src="dist/images/menu-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-four">
+              <img src="dist/images/menu-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-five">
+              <img src="dist/images/menu-ejemplo.jpg" alt="ejemplo">
+            </div>
+            <div class="cell small-12 medium-6 large-6 box-case-six">
+              <img src="dist/images/menu-ejemplo.jpg" alt="ejemplo">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- nosotros -->
+    <section class="about-us scroll" id="nosotros" data-magellan-target="nosotros">
+      <div class="content about-us-text">
+        <h2>Nosotros</h2>
+        <h3>Construímos valor para las marcas, las 24hs, los 365 días del año.</h3>
+        <p>Iniciamos nuestro camino en el año ’88 comercializando derechos
+          de TV y estáticas para las principales competencias de fútbol de
+          América. Una agencia de marketing deportivo dedicada a la publicidad,
+          comunicación, comercialización y producción de eventos en toda
+          Latinoamérica y el mundo.</p>
+        <p>Nuestra trayectoria nos permite brindar servicios 360º de excelencia
+          y calidad, con una cobertura masiva que sólo deportes como el fútbol
+          logran. Y alianzas estratégicas que nos permiten llegar a cualquier
+          parte del mundo, garantizando un delivery masivo de la acción a
+          través de nuestras herramientas digitales.</p>
+      </div>
+    </section>
+
+    <!-- capacidades -->
+    <section class="capacidades scroll" id="capacidades" data-magellan-target="capacidades">
+      <div class="capacidades-container">
+        <h2>Capacidades</h2>
+        <h3>Servicios globales de publicidad, medios y branding 360.</h3>
+        <div class="grid-x">
+          <div class="cell small-6 medium-4 large-2 icons-box consultoria">
+            <div class="scale">
+              <img src="dist/images/consultoria.png" alt="consultoria">
+              <p>consultoria</p>
+            </div>
+          </div>
+          <div class="cell small-6 medium-4 large-2 icons-box promociones">
+            <div class="scale">
+              <img src="dist/images/promociones.png" alt="promociones">
+              <p>promociones</p>
+            </div>
+          </div>
+          <div class="cell small-6 medium-4 large-2 icons-box eventos">
+            <div class="scale">
+              <img src="dist/images/eventos.png" alt="eventos">
+              <p>eventos</p>
+            </div>
+          </div>
+          <div class="cell small-6 medium-4 large-2 icons-box hospitality">
+            <div class="scale">
+              <img src="dist/images/hospitality.png" alt="hospitality">
+              <p>hospitality</p>
+            </div>
+          </div>
+          <div class="cell small-6 medium-4 large-2 icons-box planification">
+            <div class="scale">
+              <img src="dist/images/planificacion.png" alt="planificacion">
+              <p>planificacion de medios</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- planificacion -->
+
+    <!-- <section class="module module_main scroll" style="height: 683px;">
+      <div class="module-inner1" style="opacity: 1;">
+        <div class="module-inner2">
+          <h1 class="module-title module-title-country appear appear-on">Spain today</h1>
+          <div class="module-intro appear appear-on">
+            <p>Fall in love with Spain, where food, friends, family and fun rule all. Whether you're looking to follow royal footsteps in Madrid, lose yourself in Barcelona's sea breeze, or tame the brave bull in mythical Andalucía, adventure awaits around every corner.</p>
+          </div>
+        </div>
+      </div>
+      <div class="module-background" style="transform: translateY(0px);">
+        <div class="module-background-image"><img src="dist/images/bg-planificacion.jpg" alt="Spain today" width="1280" height="800"></div>
+      </div>
+    </section> -->
+
+    <section class="planificacion-1">
+      <div class="planificacion-1-content">
+        <div class="grid-x">
+          <div class="cell small-12 medium-12 large-3">
+          </div>
+          <div class="cell small-12 medium-12 large-12">
+            <div class="grid-x bg-content">
+              <span class="icon-cross planificacion-1-exit"></span>
+              <img src="dist/images/promociones.png" id="next-icon-1" class="next-icon" alt="next">
+              <img src="dist/images/planificacion.png" id="back-icon-1" class="back-icon" alt="back">
+              <div class="cell small-12 medium-12 large-8 planificacion-1-text">
+                <h2>CONSULTORÍA</h2>
+                <p>SV Group pone a su disposición el expertise de su equipo en el ámbito
+                del marketing deportivo, maximizando la rentabilidad de la inversión
+                en patrocinios. </p>
+                <p>Acercamos una cartera de eventos ajustados a las políticas
+                y estrategias comunicacionales de su empresa. Ofrecemos asesoría creativa
+                y operativa en patrocinios deportivos, basada en las propiedades del cliente.</p>
+                
+                <p>SV Group se destaca por sus soluciones ágiles y concretas. Ideas fácilmente
+                Implementables gracias al profundo conocimiento del ámbito deportivo,
+                Jugadores, clubes y asociaciones.</p>
+
+                </p>
+              </div>
+              <div class="cell small-12 medium-12 large-4">
+                <img src="dist/images/consultoria.png" alt="planificacion">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="planificacion-2">
+      <div class="planificacion-2-content">
+        <div class="grid-x">
+          <div class="cell small-12 medium-12 large-3">
+          </div>
+          <div class="cell small-12 medium-12 large-12">
+            <div class="grid-x bg-content">
+              <span class="icon-cross planificacion-2-exit"></span>
+              <img src="dist/images/consultoria.png" id="back-icon-2" class="back-icon" alt="back">
+              <img src="dist/images/eventos.png" id="next-icon-2" class="next-icon" alt="next">
+              <div class="cell small-12 medium-12 large-8 planificacion-2-text">
+                <h2>PROMOCIONES</h2>
+                <p>Nuestra amplia experiencia nos permite desarrollar distintas alternativas para una acción promocional atractiva. La misma debe cumplir con la estrategia
+                de marketing y objetivos de la marca, para poder acercarla a los consumidores, incrementar las ventas y hacerla crecer en las nuevas generaciones. </p>
+               <p>Contamos con soporte en las principales ciudades de Latinoamérica, lo que asegura la correcta implementación de la acción.</p>
+
+                </p>
+              </div>
+              <div class="cell small-12 medium-12 large-4">
+                <img src="dist/images/promociones.png" alt="planificacion">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="planificacion-3">
+      <div class="planificacion-3-content">
+        <div class="grid-x">
+          <div class="cell small-12 medium-12 large-3">
+          </div>
+          <div class="cell small-12 medium-12 large-12">
+            <div class="grid-x bg-content">
+              <span class="icon-cross planificacion-3-exit"></span>
+              <img src="dist/images/promociones.png" id="back-icon-3" class="back-icon" alt="back">
+              <img src="dist/images/hospitality.png" id="next-icon-3" class="next-icon" alt="next">
+              <div class="cell small-12 medium-12 large-8 planificacion-3-text">
+                <h2>EVENTOS</h2>
+                <p>Desarrollo, coordinación y producción de eventos, lanzamientos, convenciones,
+                presentaciones o demostraciones de producto. </p>
+                <p>Diseñamos eventos a medida de los objetivos, presupuesto y necesidades de la marca. </p>
+                <p>Nuestra amplia y calificada cartera de proveedores en toda Latinoamérica, nos permite un alcance
+                  global garantizando el éxito del evento.</p>
+
+                </p>
+              </div>
+              <div class="cell small-12 medium-12 large-4">
+                <img src="dist/images/eventos.png" alt="planificacion">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="planificacion-4">
+      <div class="planificacion-4-content">
+        <div class="grid-x">
+          <div class="cell small-12 medium-12 large-3">
+          </div>
+          <div class="cell small-12 medium-12 large-12">
+            <div class="grid-x bg-content">
+              <span class="icon-cross planificacion-4-exit"></span>
+              <img src="dist/images/eventos.png" id="back-icon-4" class="back-icon" alt="next">
+              <img src="dist/images/planificacion.png" id="next-icon-4" class="next-icon" alt="back">
+              <div class="cell small-12 medium-12 large-8 planificacion-4-text">
+                <h2>HOSPITALITY</h2>
+                <p>Nuestro concepto es realzar las plataformas interempresariales generando
+                asociaciones positivas con la marca. Analizamos, coordinamos y operamos
+                todo lo necesario para producir un evento memorable, que brinde a los 
+                asistentes el valor de una experiencia única e inolvidable.
+                </p>
+                <p>Estrategia y planeamiento.
+                </p>
+                <p>Relaciones con los medios. Relaciones con periodistas.
+                </p>
+              </div>
+              <div class="cell small-12 medium-12 large-4">
+                <img src="dist/images/hospitality.png" alt="planificacion">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="planificacion-5">
+      <div class="planificacion-5-content">
+        <div class="grid-x">
+          <div class="cell small-12 medium-12 large-3">
+          </div>
+          <div class="cell small-12 medium-12 large-12">
+            <div class="grid-x bg-content">
+              <span class="icon-cross planificacion-5-exit"></span>
+              <img src="dist/images/hospitality.png" id="back-icon-5" class="back-icon" alt="back">
+              <img src="dist/images/consultoria.png" id="next-icon-5" class="next-icon" alt="next">
+              <div class="cell small-12 medium-12 large-8 planificacion-5-text">
+                <h2>PLANIFICACIÓN DE MEDIOS</h2>
+                <p>La planificación e implementación de campañas publicitarias en los medios
+                dentro de la era digital, se traduce en la correcta explotación de los múltiples
+                medios alternativos. 
+                </p>
+                <p>La creatividad se multiplica, puesto que la planificación 
+                de medios es la llave que conduce al éxito de la comunicación de la marca.
+                </p>
+                <p>En SV Group pensamos para decir “cómo” y buscamos las mejores plataformas
+                para decir “dónde”.
+                </p>
+              </div>
+              <div class="cell small-12 medium-12 large-4">
+                <img src="dist/images/planificacion.png" alt="planificacion">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contacto -->
+    <section class="contact scroll" id="contacto" data-magellan-target="contacto" data-options="offset: -5000px;">
+      <div class="container">
+        <div class="contact-container">
+          <h2 class="text">NUESTRAS <br>OFICINAS</h2>
+          <span class="contact-bg">
+            <p class="text address">Avenida Libertador 15.000 <br>
+              B1642CKN San Isidro <br>
+              Buenos Aires <br>
+              Argentina</p>
+            <p class="info">
+              <a href="tel:+541147474544">+54 11 4747 4544</a>
+              <a href="tel:+541147439991">+54 11 4743 9991</a>
+
+
+              <a href="mailto:contacto@sv-group.com.ar">contacto@sv-group.com.ar</a>
+            </p>
+          </span>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.520505203094!2d-58.478681385150445!3d-34.515038480482595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a12c181347%3A0xcc951cbda99d485e!2sAv.+del+Libertador%2C+Argentina!5e0!3m2!1ses!2sus!4v1523025095977" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <!-- JavaScript -->
+    <script src="dist/js/vendor/jquery.js"></script>
+    <script src="dist/js/vendor/what-input.js"></script>
+    <script src="dist/js/vendor/foundation.min.js"></script>
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/vendor/jquery.scrollify.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      window.sr=ScrollReveal({reset:true, viewFactor: .9,}),
+                              sr.reveal(".hero-wrapper",{delay:100,scale:1,easing:"ease",opacity:0,duration:1000}),
+                              sr.reveal('.hero-wrapper-title',{delay:100,duration: 1000,scale:1,distance:'100px',origin:'bottom'},10);
+                              sr.reveal(".culture-wrapper",{delay:100,scale:1,easing:"ease",opacity:0,duration:1000}),
+                              sr.reveal(".culture-wrapper-container-title",{delay:300,distance:'100px',scale: 1,easing:"ease",duration:800}),
+                              sr.reveal(".culture-wrapper-container-subtitle",{delay:400,distance:'100px',scale:1,easing:"ease",duration:800}),
+                              sr.reveal(".culture-wrapper-container-desc",{delay:500,distance:'100px',scale:1,easing:"ease",duration:800}),
+                              sr.reveal(".culture-wrapper-images .toyota",{delay:800,distance:'0',easing:"ease",scale: 1,duration:5000}),
+                              sr.reveal(".culture-wrapper-images .bridgestone",{delay:1800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".culture-wrapper-images .santander",{delay:2800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".culture-wrapper-images .sudamericana",{delay:3800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".culture-wrapper-images .total",{delay:4800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".culture-wrapper-images .bumbet",{delay:5800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".culture-wrapper-images .conmebol",{delay:6800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".culture-wrapper-images .autocredito",{delay:7800,distance:'0',scale: 1,easing:"ease",duration:5000}),
+                              sr.reveal(".cases-wrapper",{delay:100,scale:1,easing:"ease",opacity:0,duration:1000}),
+                              sr.reveal(".cases-wrapper-half h3",{delay:500,distance:'50px',scale:1,easing:"ease",duration:1000}),
+                              sr.reveal(".more-grid",{delay:500,distance:'50px',scale:1,easing:"ease",duration:1000}),
+                              sr.reveal(".about-us",{delay:100,scale:1,easing:"ease",opacity:0,duration:1000}),
+                              sr.reveal(".about-us h2",{delay:300,distance:'100px',scale:1,easing:"ease",duration:1000}),
+                              sr.reveal(".about-us h3",{delay:400,distance:'100px',scale:1,easing:"ease",duration:1000}),
+                              sr.reveal(".about-us p",{delay:500,distance:'100px',scale:1,easing:"ease",duration:1000}),
+                              sr.reveal(".capacidades",{delay:100,scale:1,easing:"ease",opacity:0,duration:1000}),
+                              sr.reveal(".capacidades-container h2",{delay:300,scale:1,distance:'50px',easing:"ease",duration:1200}),
+                              sr.reveal(".capacidades-container h3",{delay:400,scale:1,distance:'50px',easing:"ease",duration:1200}),
+                              sr.reveal(".consultoria",{delay:500,scale:1,distance:'0',easing:"ease",duration:3000}),
+                              sr.reveal(".promociones",{delay:1500,scale:1,distance:'0',easing:"ease",duration:3000}),
+                              sr.reveal(".eventos",{delay:2500,scale:1,distance:'0',easing:"ease",duration:3000}),
+                              sr.reveal(".hospitality",{delay:3500,scale:1,distance:'0',easing:"ease",duration:3000}),
+                              sr.reveal(".planification",{delay:4500,scale:1,distance:'0',easing:"ease",duration:3000}),
+                              sr.reveal(".contact",{delay:100,scale:1,easing:"ease",opacity:0,duration:1000})
+    </script>
+
+    <!-- Css -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+  </body>
+</html>

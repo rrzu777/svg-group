@@ -1,0 +1,96 @@
+
+.menu {
+  font-size: 35px;
+  transition: .5s ease all;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu li:before{
+  content: '∘';
+  font-size: 0px;
+  line-height: 20px;
+  color: #888888;
+}
+
+.menu a {
+  color: #555;
+  text-decoration: none;
+  font-family: var(--barlow);
+  text-transform: capitalize;
+  line-height: .4em;
+  font-weight: 300;
+
+  &:hover {
+    color: #888;
+  }
+}
+
+.header {
+  text-align: left;
+}
+
+.menu {
+  position: static;
+  display: block;
+}
+
+.menu li:first-child {
+  margin: 0;
+}
+
+.menu ul {
+  padding: 0;
+}
+.portada .contenedor {
+  position: static;
+}
+.header {
+  position: static;
+}
+.header .contenedor {
+  position: static;
+}
+
+.menu {
+  background: #111;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  /* left: 0; */
+  z-index: 9999;
+  display: flex;
+  width: 25vw;
+  align-items: center;
+  transition: .5s;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu ul {
+  flex: 1;
+}
+
+.menu ul a {
+  transition: .3s ease-in-out all;
+}
+
+.menu li {
+  display: block;
+  margin: 0;
+  padding: 1px;
+}
+
+.menu li:before {
+  display: none;
+}
+
+.portada {
+  text-align: left;
+}
