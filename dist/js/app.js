@@ -1,4 +1,6 @@
-$(document).foundation()
+$(document).ready(function(){
+	$(document).foundation();
+});
 
 $(window).on('load', function(){
 	$('.spinner-container').css("opacity","0");
@@ -78,27 +80,21 @@ $('.box-news-3-open').click(function(){
 // Overlay
 $('.box-case-one').click(function(){
 	$('.overlay-one').addClass('active');
-	$('.overlay-one').css('animation', 'modalIn 3s forwards');
 });
 $('.box-case-two').click(function(){
 	$('.overlay-two').addClass('active');
-	$('.overlay-two').css('animation', 'modalIn 3s forwards');
 });
 $('.box-case-three').click(function(){
 	$('.overlay-three').addClass('active');
-	$('.overlay-three').css('animation', 'modalIn 3s forwards');
 });
 $('.box-case-four').click(function(){
 	$('.overlay-four').addClass('active');
-	$('.overlay-four').css('animation', 'modalIn 3s forwards');
 });
 $('.box-case-five').click(function(){
 	$('.overlay-five').addClass('active');
-	$('.overlay-five').css('animation', 'modalIn 3s forwards');
 });
 $('.box-case-six').click(function(){
 	$('.overlay-six').addClass('active');
-	$('.overlay-six').css('animation', 'modalIn 3s forwards');
 });
 
 // remove class
