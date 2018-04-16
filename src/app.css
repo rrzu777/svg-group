@@ -250,7 +250,8 @@ body {
 
 /* ============================== Cases =======================================*/
 
-.overlay-one, .overlay-two, .overlay-three, .overlay-four, .overlay-five, .overlay-six {
+.overlay-one, .overlay-two, .overlay-three, .overlay-four, .overlay-five, .overlay-six, 
+.overlay-seven, .overlay-eight, .overlay-nine, .overlay-ten, .overlay-eleven, .overlay-twelve {
   background: url('../images/modal-bg.jpg');
   background-position: center;
   background-size: cover;
@@ -260,22 +261,25 @@ body {
   left: 0;
   bottom: 0;
   display: flex;
-  z-index: 999999999;
   align-items: center;
   padding-left: 15vw;
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: 1s ease;
+  transition: all 1.5s ease;
+  animation: modalOut 1.5s forwards;
 
   &.active {
     opacity: 1;
     visibility: visible;
+    transition: opacity 1.5s ease;
+    animation: modalIn 1.5s forwards;
+    z-index: 999999999;
   }
 }
 
-.overlay-lightbox-1, .overlay-lightbox-2, .overlay-lightbox-3, .overlay-lightbox-4, .overlay-lightbox-5,
-.overlay-lightbox-6 {
+.overlay-lightbox-1, .overlay-lightbox-2, .overlay-lightbox-3, .overlay-lightbox-4, .overlay-lightbox-5, .overlay-lightbox-6,
+.overlay-lightbox-7, .overlay-lightbox-8, .overlay-lightbox-9, .overlay-lightbox-10, .overlay-lightbox-11, .overlay-lightbox-12 {
   background-color: var(--azul);
   background-position: center;
   background-size: cover;
@@ -288,7 +292,6 @@ body {
   align-items: center;
   justify-content: center; */
   /* flex-direction: column; */
-  z-index: 9999999999999;
   opacity: 0;
   visibility: hidden;
   transition: 1s ease;
@@ -306,11 +309,14 @@ body {
   &.active {
     opacity: 1;
     visibility: visible;
+    z-index: 9999999999999;
   }
 }
 
 .lightbox-exit-1, .lightbox-exit-2, .lightbox-exit-3, .lightbox-exit-4,
-.lightbox-exit-5, .lightbox-exit-6 {
+.lightbox-exit-5, .lightbox-exit-6,
+.lightbox-exit-8, .lightbox-exit-8, .lightbox-exit-9, .lightbox-exit-10,
+.lightbox-exit-11, .lightbox-exit-12 {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -337,11 +343,12 @@ body {
   z-index: 9999999999999;
 }
 
-.modal-one, .modal-two, .modal-three, .modal-four, .modal-five, .modal-six {
+.modal-one, .modal-two, .modal-three, .modal-four, .modal-five, .modal-six,
+.modal-seven, .modal-eight, .modal-nine, .modal-ten, .modal-eleven, .modal-twelve {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* animation: modalIn 3s forwards; */
+  justify-content: flex-start;
+  animation: modalOut 3s forwards;
   /* animation-delay: .5s; */
   width: 100vw;
   height: 70vh;
@@ -387,7 +394,9 @@ body {
 }
 
 .box-case-one, .box-case-two, .box-case-three, .box-case-four,
-.box-case-five, .box-case-six {
+.box-case-five, .box-case-six,
+.box-case-seven, .box-case-eight, .box-case-nine, .box-case-ten,
+.box-case-eleven, .box-case-twelve {
   position: relative;
   overflow: hidden;
 
@@ -397,11 +406,38 @@ body {
     width: 100%;
     height: 100%;
     cursor: pointer;
+  }
 
-    &:hover{
+  &:before {
+    content: "";
+    background-image: url('../images/more.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0.8;
+      z-index: 100;
+    }
+    & img {
       transform: scale(1.1);
       filter: grayscale(60%);
     }
+  }
+  &.active {
+    animation: modalIn 3s forwards;
   }
 }
 
@@ -413,7 +449,7 @@ body {
   bottom: 5px;
   font-weight: 300;
   right: 35px;
-  width: 80px;
+  width: auto;
   height:80px;
   cursor: pointer;
   z-index: 999999;
@@ -422,9 +458,12 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 12px;
-    padding-left: 1em;
-    padding-top: 1em;
+    padding: 1em;
     width: 100%;
+    margin: 0;
+  }
+  &-btn {
+    max-width: 48px;
   }
 }
 
@@ -449,9 +488,12 @@ body {
   }
 }
 
-.modal-image-1, .modal-image-2, .modal-image-3, .modal-image-4, .modal-image-5, .modal-image-6 {
+.modal-image-1, .modal-image-2, .modal-image-3, .modal-image-4, .modal-image-5, .modal-image-6,
+.modal-image-7, .modal-image-8, .modal-image-9, .modal-image-10, .modal-image-11, .modal-image-12 {
   position: relative;
   overflow: hidden;
+  width: auto!important;
+  max-width: 356px;
 
   & img {
     height: 70vh;
@@ -459,16 +501,40 @@ body {
     width: auto;
     max-width: auto;
     cursor: pointer;
+  }
+  
+  &:before {
+    content: "";
+    background-image: url('../images/more.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+  }
 
-
-    &:hover{
+  &:hover {
+    &:before {
+      opacity: 0.8;
+      z-index: 100;
+    }
+    & img {
       transform: scale(1.1);
       filter: grayscale(60%);
     }
   }
 }
 
-.lightbox-1, .lightbox-2, .lightbox-3, .lightbox-4, .lightbox-5, .lightbox-6 {
+.lightbox-1, .lightbox-2, .lightbox-3, .lightbox-4, .lightbox-5, .lightbox-6,
+.lightbox-7, .lightbox-8, .lightbox-9, .lightbox-10, .lightbox-11, .lightbox-12  {
   position: absolute;
   bottom: 0;
   right: 0;

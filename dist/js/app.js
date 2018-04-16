@@ -52,7 +52,6 @@ $('.box-news-1-open').click(function(){
 	$('.box-news-3-open').addClass('down');
 });
 $('#button-back-menu').click(function(){
-	console.log(this);
 	$('#button-menu-left').removeClass('hidden');
 	$('#button-back-menu').removeClass('active');
 	$('[data-show="true"]').removeClass('active');
@@ -77,55 +76,100 @@ $('.box-news-3-open').click(function(){
 	$('.box-news-3-open').addClass('active');
 });
 
+	var $body = $("body");
 // Overlay
 $('.box-case-one').click(function(){
 	$('.overlay-one').addClass('active');
 });
 $('.box-case-two').click(function(){
 	$('.overlay-two').addClass('active');
+	$body.css("overflow","hidden");
 });
 $('.box-case-three').click(function(){
 	$('.overlay-three').addClass('active');
+	$body.css("overflow","hidden");
 });
 $('.box-case-four').click(function(){
 	$('.overlay-four').addClass('active');
+	$body.css("overflow","hidden");
 });
 $('.box-case-five').click(function(){
 	$('.overlay-five').addClass('active');
+	$body.css("overflow","hidden");
 });
 $('.box-case-six').click(function(){
 	$('.overlay-six').addClass('active');
+	$body.css("overflow","hidden");
+});
+$('.box-case-seven').click(function(){
+	$('.overlay-seven').addClass('active');
+	$body.css("overflow","hidden");
+});
+$('.box-case-eight').click(function(){
+	$('.overlay-eight').addClass('active');
+	$body.css("overflow","hidden");
+});
+$('.box-case-nine').click(function(){
+	$('.overlay-nine').addClass('active');
+	$body.css("overflow","hidden");
+});
+$('.box-case-ten').click(function(){
+	$('.overlay-ten').addClass('active');
+	$body.css("overflow","hidden");
+});
+$('.box-case-eleven').click(function(){
+	$('.overlay-eleven').addClass('active');
+	$body.css("overflow","hidden");
+});
+$('.box-case-twelve').click(function(){
+	$('.overlay-twelve').addClass('active');
+	$body.css("overflow","hidden");
 });
 
 // remove class
 $('.modal-exit').click(function(){
 	$('.overlay-one').removeClass('active');
-	$('.overlay-one').css('animation', 'modalOut 3s forwards');
 });
 $('.modal-exit').click(function(){
 	$('.overlay-two').removeClass('active');
-	$('.overlay-two').css('animation', 'modalOut 3s forwards');
 });
 $('.modal-exit').click(function(){
 	$('.overlay-three').removeClass('active');
-	$('.overlay-three').css('animation', 'modalOut 3s forwards');
 });
 $('.modal-exit').click(function(){
 	$('.overlay-four').removeClass('active');
-	$('.overlay-four').css('animation', 'modalOut 3s forwards');
 });
 $('.modal-exit').click(function(){
 	$('.overlay-five').removeClass('active');
-	$('.overlay-five').css('animation', 'modalOut 3s forwards');
 });
 $('.modal-exit').click(function(){
 	$('.overlay-six').removeClass('active');
-	$('.overlay-six').css('animation', 'modalOut 3s forwards');
+});
+$('.modal-exit').click(function(){
+	$('.overlay-seven').removeClass('active');
+});
+$('.modal-exit').click(function(){
+	$('.overlay-eight').removeClass('active');
+});
+$('.modal-exit').click(function(){
+	$('.overlay-nine').removeClass('active');
+});
+$('.modal-exit').click(function(){
+	$('.overlay-ten').removeClass('active');
+});
+$('.modal-exit').click(function(){
+	$('.overlay-eleven').removeClass('active');
+});
+$('.modal-exit').click(function(){
+	$('.overlay-twelve').removeClass('active');
 });
 
 // lightbox
 $('.modal-image-1').click(function(){
 	$('.overlay-lightbox-1').addClass('active');
+	$(".cases-wrapper").removeClass("scroll");
+	$(".cases").removeClass("scroll");
+	$body.css("overflow","hidden");
 });
 $('.lightbox-exit-1').click(function(){
 	$('.overlay-lightbox-1').removeClass('active');
@@ -159,6 +203,42 @@ $('.modal-image-6').click(function(){
 });
 $('.lightbox-exit-6').click(function(){
 	$('.overlay-lightbox-6').removeClass('active');
+});
+$('.modal-image-7').click(function(){
+	$('.overlay-lightbox-7').addClass('active');
+});
+$('.lightbox-exit-7').click(function(){
+	$('.overlay-lightbox-7').removeClass('active');
+});
+$('.modal-image-8').click(function(){
+	$('.overlay-lightbox-8').addClass('active');
+});
+$('.lightbox-exit-8').click(function(){
+	$('.overlay-lightbox-8').removeClass('active');
+});
+$('.modal-image-9').click(function(){
+	$('.overlay-lightbox-9').addClass('active');
+});
+$('.lightbox-exit-9').click(function(){
+	$('.overlay-lightbox-9').removeClass('active');
+});
+$('.modal-image-10').click(function(){
+	$('.overlay-lightbox-10').addClass('active');
+});
+$('.lightbox-exit-10').click(function(){
+	$('.overlay-lightbox-10').removeClass('active');
+});
+$('.modal-image-11').click(function(){
+	$('.overlay-lightbox-11').addClass('active');
+});
+$('.lightbox-exit-11').click(function(){
+	$('.overlay-lightbox-11').removeClass('active');
+});
+$('.modal-image-12').click(function(){
+	$('.overlay-lightbox-12').addClass('active');
+});
+$('.lightbox-exit-12').click(function(){
+	$('.overlay-lightbox-12').removeClass('active');
 });
 
 // grid-Extra
