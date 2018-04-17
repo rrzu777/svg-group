@@ -475,6 +475,12 @@ body {
   & img {
     padding: 1em 1em 1em 0;
     width: 200px;
+
+    &.close-svg {
+      width: 110px;
+      height: auto;
+      margin: 0;
+    }
   }
 
   &-title {
